@@ -1,7 +1,7 @@
 # @blockly/field-multilineinput [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
 A [Blockly](https://www.npmjs.com/package/blockly) multiline input field and
-  associated block.
+associated block.
 
 #### Multiline input field
 
