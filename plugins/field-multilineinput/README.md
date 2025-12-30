@@ -59,17 +59,17 @@ overwrite it.
 ### JavaScript
 
 ```js
-import * as Blockly from "blockly";
-import { registerFieldMultilineInput } from "@blockly/field-multilineinput";
+import * as Blockly from 'blockly';
+import {registerFieldMultilineInput} from '@blockly/field-multilineinput';
 
 registerFieldMultilineInput();
-Blockly.Blocks["test_field_multilineinput"] = {
+Blockly.Blocks['test_field_multilineinput'] = {
   init: function () {
     this.appendDummyInput()
-      .appendField("multilineinput: ")
+      .appendField('multilineinput: ')
       .appendField(
-        new FieldMultilineInput("some text \n with newlines"),
-        "FIELDNAME",
+        new FieldMultilineInput('some text \n with newlines'),
+        'FIELDNAME',
       );
   },
 };
@@ -167,12 +167,12 @@ function will also install the correct generator function for the
 corresponding language(s).
 
 ```js
-import { javascriptGenerator } from "blockly/javascript";
-import { dartGenerator } from "blockly/dart";
-import { phpGenerator } from "blockly/php";
-import { pythonGenerator } from "blockly/python";
-import { luaGenerator } from "blockly/lua";
-import { textMultiline } from "@blockly/field-multilineinput";
+import {javascriptGenerator} from 'blockly/javascript';
+import {dartGenerator} from 'blockly/dart';
+import {phpGenerator} from 'blockly/php';
+import {pythonGenerator} from 'blockly/python';
+import {luaGenerator} from 'blockly/lua';
+import {textMultiline} from '@blockly/field-multilineinput';
 
 // Installs the block, the field, and all of the language generators.
 textMultiline.installBlock({
